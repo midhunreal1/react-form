@@ -6,11 +6,10 @@ import SignupForm from './components/SignupForm';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/react-form">
       <Routes>
-  <Route path="/" element={<SignupForm />} />
   <Route path="/login" element={<LoginForm />} />
-  <Route path="/react-form" element={<SignupForm />} />
+  <Route path="/" element={<SignupForm />} />
 </Routes>
 
     </Router>
